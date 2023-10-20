@@ -6,12 +6,21 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+body {
+    background-color: cadetblue;
+}
 
 .container {
+    max-width: 1000px;
+    margin: 0 auto;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
-    background-color: cadetblue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .to-do-app {
     background-color: #fff;
@@ -74,7 +83,7 @@ ul li::before {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background-image: url('unchecked.png');
+    background-image: url('images/unchecked.png');
     background-position: center;
     background-size: cover;
 }
@@ -82,7 +91,7 @@ ul li.checked {
     text-decoration: line-through;
 }
 ul li.checked::before {
-    background-image: url('checked.png');
+    background-image: url('images/checked.png');
 }
 ul li span  {
     position: absolute;
@@ -96,4 +105,24 @@ ul li span  {
     font-size: 15px;
     text-align: center;
     cursor: pointer;
+}
+
+
+
+
+.to-do-2 {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    column-gap: 5px;
+    place-items: center;
+    padding: 5px;
+    font-weight: 600;
+}
+.to-do-2 a {
+    text-decoration: underline;
+    color: white;
+}
+.to-do-2 i {
+    color:rgb(10, 53, 88);
 }
